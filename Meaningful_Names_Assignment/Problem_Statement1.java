@@ -1,6 +1,6 @@
 public class DataManipulator {
-    int integerData;
-    double decimalData;
+    int firstNumber;
+    double secondNumber;
     String textData;
 
     public void printCalculatedSum(int operand1, int operand2) {
@@ -9,19 +9,19 @@ public class DataManipulator {
     }
 
     public void printUppercaseText(String originalText) {
-        String updatedText = originalText.toUpperCase();
-        System.out.println("Updated String: " + updatedText);
+        textData = originalText.toUpperCase();
+        System.out.println("Updated String: " + textData);
     }
 }
 
 public class Main {
     public static void main(String[] args) {
         DataManipulator manipulator = new DataManipulator();
-        manipulator.integerData= 10;
-        manipulator.decimalData = 20.5;
+        manipulator.firstNumber= 10;
+        manipulator.secondNumber = 20.5;
         manipulator.textData= "hello";
         
-        manipulator.printCalculatedSum(manipulator.integerData, 5);
+        manipulator.printCalculatedSum(manipulator.firstNumber, 5);
         manipulator.printUppercaseText("world");
     }
 }
