@@ -1,0 +1,3 @@
+interface DeviceDetails {
+    void displayDetails();
+}
